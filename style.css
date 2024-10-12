@@ -1,0 +1,251 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Inter;
+}
+
+.container {
+  width: 343px;
+  margin: 39px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.header-text {
+  font-weight: 600;
+  font-size: 20px;
+  color: #ff6b82;
+  line-height: 24.2px;
+}
+.header-line {
+  display: inline-block;
+  width: 96.63px;
+  height: 0px;
+  top: 51.59px;
+  left: 305.37px;
+  gap: 0px;
+  border: 0.9px solid #c8c8c8;
+  opacity: 0px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section {
+  border: 0.9px solid #c8c8c8;
+}
+
+.section-second {
+  position: relative;
+}
+
+.section-content-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+.section-content-top-left {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.section-selected {
+  border: 2px solid #ff6b82;
+  background: #fff9fa;
+}
+
+.custom-radio input[type="radio"] {
+  display: none;
+}
+
+.custom-circle {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #dadada;
+  border-radius: 50%;
+  position: relative;
+  vertical-align: middle;
+  transition: all 0.3s ease;
+}
+
+.custom-radio input[type="radio"]:checked + .custom-circle {
+  background-color: #ff5f75;
+  border: none;
+}
+
+.custom-radio input[type="radio"]:checked + .custom-circle::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border: 1px solid #ff5f75;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.custom-radio input[type="radio"]:checked + .custom-circle::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background-color: #ff5f75;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.unit-text {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16.94px;
+}
+.discount-span {
+  background: #ff6b82;
+  color: #fff;
+  font-size: 12px;
+  padding: 2px 4px;
+  margin-left: 5px;
+}
+.unit-price-value {
+  font-size: 14.46px;
+  font-weight: 500;
+  line-height: 17.5px;
+}
+
+.standard-price-text {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.52px;
+  margin-top: 5px;
+}
+
+.standard-price-value {
+  font-family: Inter;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12.1px;
+  text-align: left;
+  margin-top: 5px;
+  text-decoration: line-through;
+  opacity: 30%;
+}
+
+.table {
+  display: none;
+  margin: 0px 0px 20px 40px;
+  border-spacing: 10px;
+}
+
+.table2 {
+  display: block;
+}
+.thead-tcell {
+  font-size: 9.94px;
+  font-weight: 400;
+  line-height: 12.03px;
+  text-align: left;
+}
+select {
+  height: 25px;
+  width: 66px;
+  font-size: 10.85px;
+  font-weight: 400;
+  line-height: 13.13px;
+  text-align: left;
+}
+
+.serial-number {
+  font-size: 9.04px;
+  font-weight: 400;
+  line-height: 10.94px;
+  text-align: left;
+}
+
+.breakup-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.breakup-section-delivery {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.94px;
+  color: #ff6b82;
+}
+
+.breakup-section-total-value {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.94px;
+}
+
+.add-cart-btn {
+  padding: 10px;
+  border-radius: 4px;
+  width: 100%;
+  border: none;
+  background: #ff6b82;
+  color: #fff;
+}
+
+.badge {
+  position: absolute;
+  top: -10px;
+  right: 6px;
+  background-color: #ff6b81;
+  color: white;
+  padding: 5px 10px;
+  font-size: 14px;
+  white-space: nowrap;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14.52px;
+  text-align: center;
+  z-index: 100 !important;
+}
+
+.badge::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 0;
+  right: -8px;
+  border-bottom: 8px solid #d7445b;
+  border-right: 8px solid transparent;
+}
+.badge::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -8px;
+  width: 0;
+  height: 0;
+  border-bottom: 8px solid #d7445b;
+  border-left: 8px solid transparent;
+}
+
+.bottom-text {
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 14.52px;
+  text-align: right;
+  margin-top: 5px;
+  color: #00000066;
+}
